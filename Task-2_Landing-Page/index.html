@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltEdge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-bolt logo-icon"></i>
+                    VoltEdge
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero" id="home">
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <div class="slide-bg" style="background-image: url('Images/Purple\ White\ and\ Red\ Modern\ Headphone\ Sale\ Promo\ Banner.jpg');"></div>
+                    <div class="slide-content">
+                        <h1>Premium headphones</h1>
+                        <p>Experience crystal clear sound with our premium wireless Headphones</p>
+                        <a href="#products" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="slide-bg" style="background-image: url('Images/New\ Watch\ Arrivals\ Banner.jpg');"></div>
+                    <div class="slide-content">
+                        <h1>Advanced Smartwatch</h1>
+                        <p>Stay connected and track your fitness with our advanced smartwatch</p>
+                        <a href="#products" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Navigation -->
+            <div class="slider-nav">
+                <button class="nav-btn prev-btn"><</button>
+                <button class="nav-btn next-btn">></button>
+            </div>
+            <!-- Slider Indicators -->
+            <div class="slider-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Featured Products</h2>
+                <p>Discover our handpicked selection of premium products</p>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Headphones.jpg"
+                            alt="Premium wireless headphones with noise cancellation and sleek black finish">
+                        <span class="badge">Sale</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Premium Wireless Headphones</h3>
+                        <p class="product-description">Experience crystal clear sound with our latest wireless
+                            headphones featuring active noise cancellation.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹1,499</span>
+                                <span class="old-price">2,999</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Magsafe.jpeg"
+                            alt="Modern smartwatch with health tracking and touchscreen display">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">MagSafe Wireless Charger</h3>
+                        <p class="product-description">MagSafe offers seamless magnetic alignment for faster wireless charging and snap-on accessories.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹1,199</span>
+                                <span class="old-price">2,099</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Keyboard.jpeg"
+                            alt="Portable Bluetooth speaker with 360-degree sound and waterproof design">
+                        <span class="badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Portable Bluetooth Keyboard</h3>
+                        <p class="product-description">Experience seamless typing with our Bluetooth wireless keyboard, and perfectly responsive.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹999</span>
+                                <span class="old-price">1,599</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Smartwatch.jpg"
+                            alt="High-performance gaming laptop with RGB keyboard and thin bezel display">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Advanced Smartwatch</h3>
+                        <p class="product-description">Stay connected and track your health with our smart Bluetooth smartwatch perfect for everyday use.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹1,599</span>
+                                <span class="old-price">2999</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Laptop Screen Extender.jpg"
+                            alt="High-performance gaming laptop with RGB keyboard and thin bezel display">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Laptop Screen Extender</h3>
+                        <p class="product-description">Boost productivity with our portable laptop screen extender perfect for multitasking.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹599</span>
+                                <span class="old-price">1299</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Images/Mouse.jpg"
+                            alt="High-performance gaming laptop with RGB keyboard and thin bezel display">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wireless Mouse</h3>
+                        <p class="product-description">Work smoothly with our wireless mouse with comfortable, fast, and easy to use.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹590</span>
+                                <span class="old-price">999</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Additional Products (hidden initially) -->
+                <div class="product-card additional-product hidden">
+
+                    <!-- Product 7 -->
+                    <div class="product-image">
+                        <img src="Images/back case .jpg"
+                            alt="Ergonomic mechanical keyboard with customizable RGB lighting">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Iphone 14 back case</h3>
+                        <p class="product-description">Protect your phone in style with our durable and sleek back cover.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹250</span>
+                                <span class="old-price">799</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card additional-product hidden">
+                    <div class="product-image">
+                        <img src="Images/Wired Airpods.jpg"
+                            alt="MagSafe compatible wireless charger with fast charging capabilities">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wired Airpods </h3>
+                        <p class="product-description">Enjoy clear sound and all-day comfort with our wired AirPods simple, reliable, and ready to go.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹999</span>
+                                <span class="old-price">1999</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <div class="product-card additional-product hidden">
+                    <div class="product-image">
+                        <img src="Images/Mouse pad.jpg"
+                            alt="MagSafe compatible wireless charger with fast charging capabilities">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mouse Pad</h3>
+                        <p class="product-description">Enjoy smooth and precise control with our comfortable and durable mouse pad.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹399</span>
+                                <span class="old-price">899</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card additional-product hidden">
+                    <div class="product-image">
+                        <img src="Images/Charger.jpg"
+                            alt="MagSafe compatible wireless charger with fast charging capabilities">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Charger</h3>
+                        <p class="product-description">Charge faster and safer with our compact and reliable charger – perfect for daily use.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹599</span>
+                                <span class="old-price">999</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-card additional-product hidden">
+                    <div class="product-image">
+                        <img src="Images/Laptop Stand (2).jpg"
+                            alt="MagSafe compatible wireless charger with fast charging capabilities">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Laptop Stand</h3>
+                        <p class="product-description">Work comfortably with our adjustable laptop stand – sturdy, portable, and ergonomic.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹349</span>
+                                <span class="old-price">999</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-card additional-product hidden">
+                    <div class="product-image">
+                        <img src="Images/Charging Cable.jpg"
+                            alt="MagSafe compatible wireless charger with fast charging capabilities">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Charging Cable</h3>
+                        <p class="product-description">Fast and reliable charging with our strong, tangle-free charging cable.</p>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">₹249</span>
+                                <span class="old-price">599</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">
+                            <span class="text">Add to Cart</span>
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="text-center">
+                <button id="view-more-btn" class="btn btn-outline">View More Products</button>
+                <button id="view-less-btn" class="btn btn-outline" style="display:none;">View Less</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">About Us</h2>
+                <p>At VoltEdge, we bring you premium mobile and computer accessories that combine power, performance,
+                    and sleek design. From fast-charging solutions to essential tech gear, our products are crafted to
+                    enhance your digital lifestyle with reliability and style. We are driven by innovation and built for
+                    those who demand more from their everyday tech.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>VoltEdge</h3>
+                    <p>Powerful tech accessories for modern users. Premium quality, performance, and reliability.</p>
+                    <br>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <form class="contact-form" action="/contact" method="post">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 VoltEdge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
